@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,5 +39,73 @@
             </p>
         </div>
     </section>
+    <section class="shows">
+        <nav class="shows__menu">
+            <button data-tab-button="em_breve" class="shows__menu__button shows__menu__button--is-active">Em breve</button>
+            <button data-tab-button="populares" class="shows__menu__button">Mais polupar</button>
+            <button data-tab-button="star_plus" class="shows__menu__button">Mais no Star+</button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__content shows__content--is-active">
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__content">
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/red.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__content">
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="">
+            </li>
+            <li class="shows__content__img">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="">
+            </li>
+        </ul>
+    </section>
+    <script src="./src/script.js"></script>
 </body>
 </html>
