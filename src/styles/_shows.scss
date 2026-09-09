@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+.shows{
+    padding: 2vw 5.6vw;
+
+    &__content{
+        display: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &--is-active{
+            display: grid;
+        }
+
+        &__img{
+            img{
+                max-width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+    &__menu{
+        display: flex;
+        justify-content: center;
+        margin: 4vh;
+        &__button{
+            background: none;
+            color: variaveis.$corTextoPrincipal;
+            border: none;
+            margin: 0 1vw;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            border-bottom: 4px solid transparent;
+
+            &--is-active{
+                border-color: variaveis.$corTextoPrincipal;
+            } 
+        }
+    }
+}
