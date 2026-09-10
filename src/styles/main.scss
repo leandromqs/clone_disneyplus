@@ -2,6 +2,7 @@
 @use 'variaveis';
 @use 'shows';
 @use 'plans';
+@use 'available-devices';
 
 @font-face {
     font-family: Avenir;
@@ -83,4 +84,38 @@ body{
 
 .button:hover{
     background-color: #561fd6;
+}
+
+.image-text-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5.6vw;
+    align-items: center;
+
+    &__text{
+        padding: 0 2vw;
+    }
+    h2{
+        margin-bottom: 24px;
+    }
+    img{
+        max-width: 100%;
+    }
+
+    &--full-width{
+        display: flex;
+        
+        .image-text-container__text{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            left: 50%;
+            width: calc(50% - 6.6vw);
+        }
+
+        img{
+            width: 100%;
+        }
+
+    }
 }

@@ -1,0 +1,21 @@
+.available-devices{
+    padding: 5.6vw;
+    text-align: center;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 60px;
+
+        &__item{
+            h3{
+                margin: 16px 0 16px;
+            }
+            img{
+                height: 180px;
+            }
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
