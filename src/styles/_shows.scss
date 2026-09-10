@@ -2,7 +2,7 @@
 
 .shows{
     padding: 2vw 5.6vw;
-
+    min-height: 50vw;
     &__content{
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
@@ -24,6 +24,7 @@
         justify-content: center;
         margin: 4vh;
         &__button{
+            font-weight: 700;
             background: none;
             color: variaveis.$corTextoPrincipal;
             border: none;
