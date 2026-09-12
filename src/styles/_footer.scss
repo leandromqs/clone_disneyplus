@@ -1,0 +1,64 @@
+@use 'variaveis';
+
+.contariner__footer{
+    max-width: 1024px;
+    text-align: center;
+    margin: 44px auto;
+
+    .footer__img{
+        height: 60px;
+        margin-bottom: 34px;
+    }
+    
+    .footer__content{
+        margin-bottom: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__item{
+            padding: 16px 16px 0 16px;
+            list-style: none;
+            a{
+                color: variaveis.$corTextoSecundario;
+            }
+            a:hover{
+                color: variaveis.$corTextoPrincipal;
+            }
+        }
+    }
+
+}
+
+.select_language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    height: 38px;
+
+    img{
+        height: 24px;
+    }
+    select{
+        cursor: pointer;
+        background-color: transparent;
+        color: variaveis.$corTextoSecundario;
+        border: none;
+        padding: 8px;
+        margin-right: 8px;
+    }
+    select:hover{
+        color: variaveis.$corTextoPrincipal;
+    }
+    select:focus{
+        outline: none;
+    }
+    option{
+        color: variaveis.$corTextoPrincipal;
+        background-color: variaveis.$corDeFundo;
+    }
+}
+
+.footer__p{
+    margin-top: 24px;
+}
