@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header--is-hidden">
         <div class="header__content">
             <h1><img class="header__content__img" src="./dist/images/disneyplus.svg" alt="Disney+"></h1>
             <ul class="header__content__item">
@@ -141,22 +141,19 @@
             <li class="plans__content__item">
                 <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
                 <strong class="title--small">R$49,90/mês*</strong>
-                <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatum natus
-                    praesentium amet, qui accusantium ut incidunt provident autem!</p>
+                <p class="text--big">No Disney+ você encontra as últimas estreias do cinema, originais e clássicos inesquecíveis</p>
                 <button class="button">Assine agora</button>
             </li>
             <li class="plans__content__item plan_meio">
                 <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
                 <strong class="title--small">R$49,90/mês*</strong>
-                <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatum natus
-                    praesentium amet, qui accusantium ut incidunt provident autem!</p>
+                <p class="text--big">Assine o Disney+ e o Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.</p>
                 <button class="button">Assine agora</button>
             </li>
             <li class="plans__content__item">
                 <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
                 <strong class="title--small">R$49,90/mês*</strong>
-                <p class="text--big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptatum natus
-                    praesentium amet, qui accusantium ut incidunt provident autem!</p>
+                <p class="text--big">Disney+, Star+ e STARZPLAY em um plano especial, Assine agora os três serviços juntos.</p>
                 <button class="button">Assine agora</button>
             </li>
         </ul>
@@ -168,20 +165,22 @@
         <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com dispositivos variados">
         <div class="image-text-container__text">
             <h2 class="title">Assista onde quiser</h2>
-            <p class="text--big">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae hic necessitatibus,
-                neque eligendi blanditiis suscipit soluta repellat facilis cum? Suscipit, autem. Consequatur a natus
-                repellat esse cum! Officia, id animi.</p>
+            <p class="text--big">Aproveite seus filmes e séries favoritos onde quiser, quando quiser e no dispositivo que preferir. Com o Disney+, você pode assistir em Smart TVs, smartphones, tablets, computadores e outros dispositivos de streaming.</p>
         </div>
     </section>
     <section class="image-text-container image-text-container--full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
+        
         <div class="image-text-container__text image-text-container--full-width">
             <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">Baixe e assista quando quiser. Assim você terá os seus favoritos até mesmo sem internet.</p>
+            <p class="text--big">Baixe seus títulos favoritos para assistir offline em até 5 dispositivos. Assim, você pode curtir o Disney+ mesmo quando não estiver conectado à internet.</p>
         </div>
     </section>
     <section class="available-devices">
-        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <h2 class="title--big">Disponível nos seus dispositivos favoritos</h2>
         <ul class="available-devices__content">
             <l1 class="available-devices__content__item">
                 <img src="./dist/images/dispositivos/computador.png" alt="Computador">
@@ -196,27 +195,33 @@
                 <img src="./dist/images/dispositivos/celular.png" alt="Celular">
                 <h3 class="title--small">Celular</h3>
                 <ul>
-                    <li class="text">Chrome OS</li>
-                    <li class="text">Mac OS</li>
-                    <li class="text">PC Window</li>
+                    <li class="text">Tablets Amazon Fire</li>
+                    <li class="text">Celulares e Tablets Androis</li>
+                    <li class="text">Iphones e Ipad´s</li>
                 </ul>
             </l1>
             <l1 class="available-devices__content__item">
                 <img src="./dist/images/dispositivos/tv.png" alt="Tv">
                 <h3 class="title--small">Tv</h3>
                 <ul>
-                    <li class="text">Chrome OS</li>
-                    <li class="text">Mac OS</li>
-                    <li class="text">PC Window</li>
+                    <li class="text">Amazon Fire</li>
+                    <li class="text">Android TV</li>
+                    <li class="text">Apple TV</li>
+                    <li class="text">Chromecast</li>
+                    <li class="text">TVs LG</li>
+                    <li class="text">Roku</li>
+                    <li class="text">Samsung</li>
                 </ul>
             </l1>
             <l1 class="available-devices__content__item">
                 <img src="./dist/images/dispositivos/videogames.png" alt="Video Games">
                 <h3 class="title--small">Video Games</h3>
                 <ul>
-                    <li class="text">Chrome OS</li>
-                    <li class="text">Mac OS</li>
-                    <li class="text">PC Window</li>
+                    <li class="text">Playstation 5</li>
+                    <li class="text">Plastation 4</li>
+                    <li class="text">Xbox One</li>
+                    <li class="text">Xbox Series X</li>
+                    <li class="text">Xbox Series S</li>
                 </ul>
             </l1>
         </ul>
@@ -225,43 +230,27 @@
         <h2 class="title--big">Perguntas frequentes</h2>
         <ul class="faq__content">
             <li class="faq__content__item">
-                <div class="faq__content__item__question title--small">
-                    Pergunta
+                <div class="faq__content__item__question title--faq">
+                    O que é o Disney+?
                 </div>
                 <div class="faq__content__item__answer text--big">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nihil amet. Error molestias officiis quod quisquam corporis ex consectetur quas quia, dolorem quidem voluptates vel repellat, corrupti natus, eos illo?
+                    O Disney+ é o serviço de streaming que oferece uma ampla variedade de filmes e séries da Disney, Pixar, Marvel, Star Wars, National Geographic e muito mais. Com o Disney+, você pode assistir aos seus títulos favoritos em qualquer lugar e a qualquer momento, com a conveniência de um serviço sob demanda.
                 </div>
             </li>
             <li class="faq__content__item">
-                <div class="faq__content__item__question title--small">
-                    Pergunta
+                <div class="faq__content__item__question title--faq">
+                    Quais são os planos de assinatura disponíveis no Disney+?
                 </div>
                 <div class="faq__content__item__answer text--big">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nihil amet. Error molestias officiis quod quisquam corporis ex consectetur quas quia, dolorem quidem voluptates vel repellat, corrupti natus, eos illo?
+                   O Disney+ oferece diferentes planos de assinatura para atender às suas necessidades. Você pode optar por uma assinatura mensal ou anual, com preços competitivos. Além disso, existem opções de combo que incluem o Star+ e o STARZPLAY para uma experiência de entretenimento ainda mais completa.
                 </div>
             </li>
             <li class="faq__content__item">
-                <div class="faq__content__item__question title--small">
-                    Pergunta
+                <div class="faq__content__item__question title--faq">
+                    Quais dispositivos são compatíveis com o Disney+?
                 </div>
                 <div class="faq__content__item__answer text--big">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nihil amet. Error molestias officiis quod quisquam corporis ex consectetur quas quia, dolorem quidem voluptates vel repellat, corrupti natus, eos illo?
-                </div>
-            </li>
-            <li class="faq__content__item">
-                <div class="faq__content__item__question title--small">
-                    Pergunta
-                </div>
-                <div class="faq__content__item__answer text--big">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nihil amet. Error molestias officiis quod quisquam corporis ex consectetur quas quia, dolorem quidem voluptates vel repellat, corrupti natus, eos illo?
-                </div>
-            </li>
-            <li class="faq__content__item">
-                <div class="faq__content__item__question title--small">
-                    Pergunta
-                </div>
-                <div class="faq__content__item__answer text--big">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nihil amet. Error molestias officiis quod quisquam corporis ex consectetur quas quia, dolorem quidem voluptates vel repellat, corrupti natus, eos illo?
+                 O Disney+ é compatível com uma ampla variedade de dispositivos, incluindo Smart TVs, smartphones, tablets, computadores e dispositivos de streaming como Chromecast, Apple TV e Amazon Fire TV. Você pode assistir ao Disney+ em até 4 dispositivos simultaneamente com uma única assinatura.
                 </div>
             </li>
         </ul>

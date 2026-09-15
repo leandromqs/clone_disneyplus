@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 .faq{
     padding: 5.6vw;
     
@@ -18,11 +20,12 @@
                 background-color: #0f1329;
                 padding: 24px;
                 border-radius: 4px 4px 0px 0px;
+                
                     &::after{
                     content: '+';
                         position:absolute;
                         right: calc(5.6vw + 32px);
-                    }   
+                    }  
             }
 
             &__answer{
