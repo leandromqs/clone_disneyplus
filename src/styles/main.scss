@@ -62,15 +62,33 @@ body{
 
 .title--big{
     @include title(44px);
+
+    @media (max-width: 768px){
+        @include title(34px);
+    }
 }
 
 .title{
     @include title;
+
+    @media (max-width: 768px){
+        @include title(28px);
+    }    
 }
 
 .title--small{
     @include title(28px);
+
+    @media (max-width: 768px){
+        @include title(22px);
+    } 
 }
+
+.title--faq{
+    @include title(28px);
+    font-weight: 400;
+}
+
 
 .button{
     display: flex;
@@ -119,6 +137,16 @@ body{
     padding: 5.6vw;
     align-items: center;
 
+    @media (max-width: 768px){
+        display:block;
+        text-align: center;
+        margin: 60px 0;
+        img{
+            width: 450px;
+            margin-bottom: 24px;
+        }
+    }
+
     &__text{
         padding: 0 2vw;
     }
@@ -131,13 +159,26 @@ body{
 
     &--full-width{
         display: flex;
-        
+
+        @media (max-width: 768px){
+            display: block;
+            text-align: center;
+            position: relative;
+            left: 0;
+        }        
         .image-text-container__text{
             position: absolute;
             display: flex;
             flex-direction: column;
             left: 50%;
             width: calc(50% - 6.6vw);
+
+            @media (max-width: 768px){
+                display: block;
+                width: 100%;
+                position: relative;
+                left: 0px;
+            }
         }
 
         img{

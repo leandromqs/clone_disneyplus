@@ -3,10 +3,21 @@
 .shows{
     padding: 2vw 5.6vw;
     min-height: 50vw;
+
+    @media (max-width: 768px){
+        padding: 5.6vw;
+        margin: 370px 0 80px;
+    }
+
     &__content{
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+            
+        }
 
         &--is-active{
             display: grid;
@@ -19,10 +30,19 @@
             }
         }
     }
+
+
     &__menu{
         display: flex;
         justify-content: center;
         margin: 4vh;
+
+        @media (max-width: 768px){
+            white-space: nowrap;
+            overflow-y: scroll;
+            margin-left: 20px;
+        }
+
         &__button{
             font-weight: 700;
             background: none;
@@ -32,6 +52,10 @@
             padding-bottom: 5px;
             text-transform: uppercase;
             border-bottom: 4px solid transparent;
+
+            @media (max-width: 768px){
+                margin: 8px;
+            }
 
             &--is-active{
                 border-color: variaveis.$corTextoPrincipal;

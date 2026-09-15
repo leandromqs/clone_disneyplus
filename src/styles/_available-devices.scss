@@ -6,6 +6,10 @@
         grid-template-columns: repeat(4, 1fr);
         margin-top: 60px;
 
+        @media (max-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         &__item{
             h3{
                 margin: 16px 0 16px;
