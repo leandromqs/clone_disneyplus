@@ -5,6 +5,7 @@
 @use 'available-devices';
 @use 'faq';
 @use 'footer';
+@use 'header';
 
 @font-face {
     font-family: Avenir;
@@ -22,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 body{
@@ -71,18 +73,40 @@ body{
 }
 
 .button{
-    display: block;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     font-size: 16px;
     color: variaveis.$corTextoPrincipal;
-    background-color: #6421ff;
+    background-color: variaveis.$corBotao;
     border-radius: 4px;
     border: none;
-    margin-top: 24px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 8px 16px;
     cursor: pointer;
+    border: 1px solid variaveis.$corBotao;
+
+    &--secundary{
+        background-color: variaveis.$corBotaoSegundario;
+        border-color: variaveis.$corBotaoSegundario;
+        &:hover{
+            background-color: lighten($color: variaveis.$corBotaoSegundario, $amount: 5%) !important;
+        }
+    
+    }
+    &--dark{
+        background-color: rgba(variaveis.$corBotaoDark,.8);
+        border-color: variaveis.$corTextoSecundario;
+        &:hover{
+            border-color: variaveis.$corBotaoDark;
+            color: variaveis.$corBotaoDark;
+            background-color: variaveis.$corTextoSecundario !important;
+        }
+    }
 }
 
 .button:hover{
