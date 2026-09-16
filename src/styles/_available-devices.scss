@@ -8,6 +8,8 @@
 
         @media (max-width: 768px){
             grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            gap: 16px;
         }
 
         &__item{
