@@ -9,6 +9,10 @@
     z-index: 1;
     background-color: variaveis.$corDeFundo;  
     transition: background-color .5s ease;
+
+    @media (max-width: 768px){
+        padding: 16px 24px;
+    }
     
     &--is-hidden{
         background-color: transparent;
@@ -44,6 +48,16 @@
             .button{
                 margin: 5px;
                 height: 40px;
+            }
+
+            @media (max-width: 768px){
+                .button{
+                    margin: 5px;
+                    height: 40px;
+                    text-wrap: nowrap;
+                    padding: 8px;
+                    font-size: 16px;
+                }                
             }
         }
     }
