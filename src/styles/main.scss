@@ -91,6 +91,7 @@ body{
     @media (max-width: 768px){
         @include title(22px);
         font-weight: 400;
+        padding: 24px 35px;
     }
 }
 
